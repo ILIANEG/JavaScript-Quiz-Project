@@ -1,0 +1,164 @@
+body {
+    background-color: #242522;
+    font-family: sans-serif;
+}
+.title-banner {
+    font-family: monospace;
+    font-size: 30px;
+    color: #B2B2B2;
+    width: 100%;
+    text-align: center;
+}
+#js {
+    color: #000000;
+    background-color: #C9CC28;
+    animation-name: blink;
+}
+.title-banner > h2 {
+    font-size: 23px;
+    font-weight: 200; 
+}
+#dev {
+    color: #C9CC28;
+}
+#skillTest {
+    color: #66CD27;
+}
+#blank {
+    padding-left: 13px;
+    border: 1px solid lightgrey;
+    animation: 1s blink infinite step-end;
+}
+hr {
+    width: 50%;
+}
+
+.selectQuiz {
+    text-align: center;
+    color: lightgrey;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.selectQuiz > a {
+    text-decoration: none;
+    color: lightgray;
+    font-style: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.selectQuiz > a:hover {
+    cursor: pointer;
+    background-color: #C9CC28;
+    color:#000000;
+}
+
+.selectQuiz > h1 {
+    margin-bottom: 50px;
+    color:#66CD27
+}
+
+@keyframes blink {
+    0% {
+        background-color: none;
+        color: #000000;
+    }
+    50% {
+        background-color: lightgrey;
+        color: lightgrey;
+    }
+}
+
+.question {
+    color: lightgrey;
+    padding: 10px;
+    margin: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.question>p {
+    font-weight: bold;
+}
+.bubble {
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    padding: 3px;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.bubble:hover {
+    background-color: lightgrey;
+    color: #242522;
+    cursor: pointer;
+}
+.bubble.selected {
+    background-color: lightgrey;
+    color: #242522;
+}
+.option {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.submitButton {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin: 30px 20px 20px 30px;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.submitButton:hover {
+    background-color: #C9CC28;
+    border: 1px solid #66CD27;
+    cursor: pointer;
+}
+.dashboard {
+    visibility: hidden;
+    display: inline-block;
+    position: fixed;
+    top: 200px;
+    width: 35%;
+    height: 150px;
+    text-align: center;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    z-index: 2;
+    margin: 0% 32.5% 0% 32.5%;
+    background-color: lightgrey;
+    font-family: sans-serif;
+    padding: 10px 0px 10px 0px;
+
+}
+.okButton {
+    display: block;
+    text-decoration: none;
+    color:#242522;
+    margin-top: 15%;
+    border: 1px solid #242522;
+    width: 15%;
+    margin: 15% 42.5% 0% 42.5%;
+    border-radius: 10px;
+}
+.okButton:hover {
+    background-color: #66CD27;
+    cursor: pointer;
+}
+
+@keyframes disappear {
+    from {opacity:100%;}
+    to {opacity: 10%;}
+}
